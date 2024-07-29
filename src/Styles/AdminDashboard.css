@@ -5,11 +5,11 @@ body {
 .brand-logo{
     background:#ff8f16;
     display: flex;
-    transition: all 2s ease;
-  height: 100%;
+  
+ 
   justify-content: center;
   align-items: center;
-  padding: 0.55rem;
+
 }
 
 
@@ -20,7 +20,7 @@ body {
     transition: width 0.3s;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 
 .sidebar.open {
@@ -42,10 +42,12 @@ body {
 
 .content.w-100 {
     margin-left: 60px;
+ 
 }
 
 .content.w-75 {
     margin-left: 250px;
+  
 }
 
 .navbar-custom {
@@ -65,3 +67,5 @@ body {
     height: 40px;
     border-radius: 50%;
 }
+
+

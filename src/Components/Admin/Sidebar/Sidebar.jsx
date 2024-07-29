@@ -3,10 +3,10 @@ import React from 'react';
 
 function Sidebar({ isOpen }) {
   return (
-    <nav className={`sidebar navbar-expand-lg navbar-light bg-light ${isOpen ? 'open' : 'closed'}`}>
-      <div className="d-flex flex-column align-items-center align-items-lg-start w-100">
-        <div className="brand-logo w-100 ">
-        <a className="navbar-brand d-flex align-items-center  " href="#">
+    <nav className={`sidebar  navbar-expand-lg navbar-light bg-light ${isOpen ? 'open' : 'closed'} `}>
+      <div className="d-flex flex-column align-items-center align-items-lg-start ">
+        <div className="brand-logo   w-100 ">
+        <a className="navbar-brand d-flex align-items-center   " href="#">
           <i className="la la-graduation-cap text-white text-3xl "></i>
           {isOpen && <span className="ms-2 text-white font-semibold text-2xl items-center ">EDUMIN</span>}
         </a>

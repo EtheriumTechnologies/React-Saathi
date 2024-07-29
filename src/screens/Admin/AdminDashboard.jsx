@@ -11,9 +11,9 @@ const AdminDashboard = () => {
     };
   
     return (
-      <div className="d-flex">
+      <div className="flex">
         <Sidebar isOpen={isSidebarOpen} />
-        <div className={`content ${isSidebarOpen ? 'w-75' : 'w-100'}`}>
+        <div className={`content  ${isSidebarOpen ? 'w-75' : 'w-100'}`}>
           <TopNavbar toggleSidebar={toggleSidebar} />
           <div className="container-fluid mt-3">
             <ul className="nav nav-tabs">

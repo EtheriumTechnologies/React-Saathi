@@ -8,9 +8,7 @@ function TopNavbar({ toggleSidebar }) {
           <button className="btn btn-link text-white" onClick={toggleSidebar}>
             <i className="la la-bars"></i>
           </button>
-          <a className="navbar-brand d-flex align-items-center" href="#">
-      
-          </a>
+         
           <form className="d-flex flex-grow-1 ">
           <input className="form-control search-bar" type="search" placeholder="Search" aria-label="Search" />
         </form>
