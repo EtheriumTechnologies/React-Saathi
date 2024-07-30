@@ -1,0 +1,175 @@
+.dashboard_sidebar{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.dashboard_sidebar_section{
+    background-color: #fff;
+    padding: 12px 5px;
+}
+
+.dashboard_sidebar_section_title{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    background-color: #fff;
+}
+
+.dashboard_sidebar_section_title p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.dashboard_sidebar_element{
+    background-color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0px 10px;
+    color: gray;
+    border-radius: 5px;
+    position: relative;
+}
+
+.dashboard_sidebar_element.active{
+    background-color: #f0f1fe;
+}
+
+.dashboard_sidebar_element:hover .dashboard_sidebar_element_main p,.dashboard_sidebar_element.active .dashboard_sidebar_element_main p{
+    color: #6a73fa;
+}
+
+.dashboard_sidebar_element_main p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dashboard_sidebar_element_main i{
+    margin: 0;
+    font-size: 20px;
+}
+
+.dashboard_sidebar_element_arrow i{
+    margin: 0;
+    font-size: 20px;
+}
+
+card-header {
+    cursor: pointer;
+  }
+  
+  .card-header .icon {
+    margin-right: 8px;
+  }
+  
+  .card-header .icon.professor {
+    color: purple;
+  }
+  
+  .card-header .icon.student {
+    color: grey;
+  }
+  
+  .card-header .title {
+    color: inherit;
+    margin: 0;
+  }
+  
+  .card-header .ml-auto {
+    margin-left: auto;
+  }
+
+
+  .accordion-body{
+    padding:.5rem
+  }
+  .accordion-body ul {
+ 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .accordion-body ul li  {
+    padding: .2rem;
+    text-decoration: none;
+   
+  }
+
+  
+  .accordion-body ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.5s ease, transform 0.5s ease
+  }
+  
+  .accordion-body ul li a:hover {
+    text-decoration: none;
+   color: #6a73fa;
+  }
+
+
+  .accordion-body ul li a i {
+    margin-right: 3px;
+    transition: transform .5s ease;
+    transform-origin: center left;
+ 
+  }
+
+  .accordion-body ul li a span {
+    transition: margin-left 1s ease; /* Add transition for transform */
+  }
+
+  .accordion-body ul li a:hover i {
+    transform: scale(2);
+  }
+  .accordion-body ul li a:hover span {
+    margin-left:10px; /* Move text to the right */
+  }
+
+  .dashboard_sidebar_element:hover .submenu {
+    display: block;
+      position: absolute;
+    left: 70px; /* Adjust this value based on your sidebar width */
+    top: 0px;
+  }
+  
+  .submenu {
+    display: none;
+  
+    background-color: #fff;
+    
+    z-index: 10;
+    width: 200px;
+    padding: 10px;
+  }
+  
+  .submenu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .submenu ul li {
+    padding: 5px 0;
+  }
+  
+  .submenu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .submenu ul li a:hover {
+    color: #6a73fa;
+  }

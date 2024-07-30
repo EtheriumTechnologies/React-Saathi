@@ -1,34 +1,28 @@
-import React ,{useState} from 'react'
-import Sidebar from '../../Components/Admin/Sidebar/Sidebar';
-import ProfessorTable from '../../Components/Admin/ProfessorTable/ProfessorTable';
-import TopNavbar from '../../Components/Admin/TopNavbar/TopNavbar';
-import '../../Styles/AdminDashboard.css'
-const AdminDashboard = () => {
-    const [isSidebarOpen, setSidebarOpen] = useState(true);
+import React, { useState, useEffect } from 'react';
+import '../../Styles/AdminDashboard.css';
+import DashboardHeader from '../../Components/Dashboard/DashboardHeader/DashboardHeader';
+import DashboardSidebar from '../../Components/Dashboard/DashboardSidebar/DashboardSidebar';
 
-    const toggleSidebar = () => {
-      setSidebarOpen(!isSidebarOpen);
-    };
-  
+
+const AdminDashboard= () => {
+
+    const [toggleSidebar,setToggleSidebar] = useState(false);
+    const [menu,setMenu]=useState(false)
+     const isSideBarOpen=()=>{
+        setToggleSidebar(!toggleSidebar)
+        setMenu(menu)
+     }
+
     return (
-      <div className="flex">
-        <Sidebar isOpen={isSidebarOpen} />
-        <div className={`content  ${isSidebarOpen ? 'w-75' : 'w-100'}`}>
-          <TopNavbar toggleSidebar={toggleSidebar} />
-          <div className="container-fluid mt-3">
-            <ul className="nav nav-tabs">
-              <li className="nav-item">
-                <a className="nav-link active" href="#">List View</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Grid View</a>
-              </li>
-            </ul>
-            <ProfessorTable />
-          </div>
+        <div>
+            <DashboardHeader setToggleSidebar={isSideBarOpen} toggleSidebar={toggleSidebar}/>
+            <DashboardSidebar toggleSidebar={toggleSidebar} menu={menu}/>
+
+            <div className={`admin_dashboard_main ml-[70px] ${toggleSidebar?'md:ml-[250px]':''}`}>
+                  <p className="bg-red-300">Content Here</p> 
+            </div>
         </div>
-      </div>
-    )
+    );
 }
 
-export default AdminDashboard
+export default AdminDashboard;
