@@ -6,7 +6,7 @@ import logo_mini from '../../../assets/uni-dashboard/logo_mini.png'
 import admin from '../../../assets/uni-dashboard/admin.png'
 
 
-const DashboardHeader=({toggleSidebar,setToggleSidebar,m})=>{
+const DashboardHeader=({toggleSidebar,setToggleSidebar})=>{
 
     return(
         <div className="dashboard_header">

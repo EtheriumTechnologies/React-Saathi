@@ -7,16 +7,16 @@ import DashboardSidebar from '../../Components/Dashboard/DashboardSidebar/Dashbo
 const AdminDashboard= () => {
 
     const [toggleSidebar,setToggleSidebar] = useState(false);
-    const [menu,setMenu]=useState(false)
+
      const isSideBarOpen=()=>{
         setToggleSidebar(!toggleSidebar)
-        setMenu(menu)
+        
      }
 
     return (
         <div>
             <DashboardHeader setToggleSidebar={isSideBarOpen} toggleSidebar={toggleSidebar}/>
-            <DashboardSidebar toggleSidebar={toggleSidebar} menu={menu}/>
+            <DashboardSidebar toggleSidebar={toggleSidebar}/>
 
             <div className={`admin_dashboard_main ml-[70px] ${toggleSidebar?'md:ml-[250px]':''}`}>
                   <p className="bg-red-300">Content Here</p> 

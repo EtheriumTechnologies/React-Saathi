@@ -5,7 +5,7 @@ import './dashboard-sidebar.css'
 
 
 
-const DashboardSidebar=({toggleSidebar,menu})=>{
+const DashboardSidebar=({toggleSidebar})=>{
     const [activeKey, setActiveKey] = useState(null);
     const [tab,setTab]=useState('dashboard')
 
@@ -72,7 +72,7 @@ const DashboardSidebar=({toggleSidebar,menu})=>{
                         {toggleSidebar?<p>Students</p>:<></>}
                     </div>
                     {toggleSidebar?<div className="dashboard_sidebar_element_arrow"> {activeKey === "0" && tab == 'students' ? <i className="ri-arrow-down-s-fill ml-auto"></i> : <i className="ri-arrow-right-s-fill ml-auto"></i>}</div>:<></>}   
-                    {!toggleSidebar && !menu ? (
+                    {!toggleSidebar ? (
                 <div className="submenu">
                   <ul>
                     <li><NavLink to="/dash-professors/all"><span>All Students</span></NavLink></li>

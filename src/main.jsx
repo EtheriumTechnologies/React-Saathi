@@ -5,6 +5,9 @@ import {BrowserRouter} from'react-router-dom'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'line-awesome/dist/line-awesome/css/line-awesome.min.css';
+import 'flowbite/dist/flowbite.css';
+import 'flowbite';
+
 
 
 
